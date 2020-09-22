@@ -1,0 +1,9 @@
+
+*.class
+
+build/*
+
+gradle/*
+Help.md
+*.bat
+gradlew
