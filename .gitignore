@@ -7,3 +7,5 @@ gradle/*
 Help.md
 *.bat
 gradlew
+.gradle/*
+.idea/*

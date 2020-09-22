@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "6c17371c-43df-41d7-b679-4f83f1dc6767",
+		"name": "spring boot aop test",
+		"description": "測試 spring boot Aop 機制.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "doSomething",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/work/doSomethingWork",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"work",
+						"doSomethingWork"
+					]
+				},
+				"description": "spring boot aop test -> doSomething"
+			},
+			"response": []
+		},
+		{
+			"name": "doSomethingError",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/work/doSomethingError",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"work",
+						"doSomethingError"
+					]
+				},
+				"description": "spring boot aop -> doError"
+			},
+			"response": []
+		},
+		{
+			"name": "doSomethingIntroduction",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/work/doSomethingIntroduction",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"work",
+						"doSomethingIntroduction"
+					]
+				},
+				"description": "spring boot aop -> doSomethingWork"
+			},
+			"response": []
+		},
+		{
+			"name": "doNothingWork",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/work/doNothingWork",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"work",
+						"doNothingWork"
+					]
+				},
+				"description": "spring boot aop annotation test"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "99c59d69-fd76-4b5a-ab62-7a32948cd798",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "f6726500-2e4a-47ed-aa5c-0080f8c6241e",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
